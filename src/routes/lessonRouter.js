@@ -14,6 +14,6 @@ router.post("/create", auth(), createLesson);
 router.put("/update", auth(), updateLesson);
 router.get("/get/:id", auth(), getLesson);
 router.delete("/delete/:id", auth(), deleteLesson);
-router.get("/list", auth(), getListLessons);
+router.get("/list", getListLessons);
 
 export { router as lessonRouter };
