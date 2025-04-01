@@ -14,6 +14,6 @@ router.post("/create", auth(), createCategory);
 router.put("/update", auth(), updateCategory);
 router.get("/get/:id", auth(), getCategory);
 router.delete("/delete/:id", auth(), deleteCategory);
-router.get("/list", auth(), getListCategories);
+router.get("/list", getListCategories);
 
 export { router as categoryRouter };
