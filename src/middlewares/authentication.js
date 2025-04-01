@@ -7,6 +7,9 @@ const auth = () => {
     if (!apiKey || ENV.X_API_KEY !== apiKey) {
       return makeErrorResponse({
         res,
+        data: {
+          code: "INVALID-API-KEY",
+        },
         message: "Full authentication is required to access this resource",
       });
     }
