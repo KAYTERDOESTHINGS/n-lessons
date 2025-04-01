@@ -106,7 +106,7 @@ const getListCategories = async (req, res) => {
 
     return makeSuccessResponse({
       res,
-      data: categories,
+      data: { content: categories },
     });
   } catch (error) {
     return makeErrorResponse({

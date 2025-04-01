@@ -118,7 +118,7 @@ const getListLessons = async (req, res) => {
 
     return makeSuccessResponse({
       res,
-      data: lessons,
+      data: { content: lessons },
     });
   } catch (error) {
     return makeErrorResponse({
